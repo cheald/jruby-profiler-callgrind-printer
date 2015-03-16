@@ -1,6 +1,6 @@
 module JRuby
   module Profiler
-    class CallgrindPrinter < org.jruby.runtime.profile.ProfilePrinter
+    class CallgrindPrinter < org.jruby.runtime.profile.builtin.ProfilePrinter
       # @param [IO] out
       def printHeader(out)
         out.puts("events: process_time")
